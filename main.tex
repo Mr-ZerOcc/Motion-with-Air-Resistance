@@ -1,0 +1,86 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+\title{Motion with Air Resistance}
+\author{Mustafa Karakuş}
+\date{December 2025}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+In introductory physics courses, motion is often analyzed under idealized conditions that neglect air resistance. However, in real-world scenarios, objects moving through air experience aerodynamic forces that significantly alter their trajectories. This paper presents a concise academic overview of motion with air resistance, focusing on quadratic drag, its incorporation into Newtonian mechanics, and related aerodynamic effects such as lift. The relevance of air resistance to transportation, sports, and ballistic systems is also discussed.
+\end{abstract}
+
+\section{Introduction}
+In physics education, students frequently analyze motion under ideal conditions, assuming the absence of dissipative forces. While this approach simplifies problem solving, it does not accurately represent natural phenomena. In reality, objects moving through air interact continuously with surrounding air molecules, resulting in air resistance (drag). This force acts opposite to the direction of motion, reduces the object’s velocity, and modifies its trajectory over time.
+
+Air resistance becomes particularly significant at high velocities and for objects with large cross-sectional areas. Consequently, neglecting this effect can lead to substantial discrepancies between theoretical predictions and real-world observations. This paper aims to bridge that gap by examining the physical origin of air resistance and its role in non-ideal motion.
+
+\subsection{Origin of Air Resistance}
+Consider an object in free fall through air for $t > 0$. As the object moves, its front surface compresses and deflects air molecules, while a low-pressure wake forms behind it. The resulting pressure difference, combined with viscous effects in the airflow, produces a net force opposing the motion. This force is known as air resistance or drag.
+
+\section{Scope and Mathematical Model}
+In this study, air resistance is modeled as a force acting opposite to the velocity of the object. According to aerodynamic theory, the magnitude of the drag force depends on the air density, the drag coefficient, the square of the object’s velocity, and the effective cross-sectional area.
+
+The drag force is given by
+\begin{equation}
+D = \frac{1}{2} C_d \rho v^2  A
+\end{equation}
+where $C_d$ is the drag coefficient, $\rho$ is the air density, $v$ is the velocity of the object, and $A$ is the cross-sectional area normal to the flow.
+
+This expression shows that air resistance is proportional to $v^2$, rather than $v$, which explains why drag effects rapidly increase at high speeds.
+
+Using Newton’s second law, the equation of motion for a vertically falling object can be written as
+\begin{equation}
+    ma = mg-D,
+\end{equation}
+
+
+where $g$ is the gravitational acceleration. Dividing both sides by $m$ yields
+\begin{equation}
+a = g - \frac{D}{m}.
+\end{equation}
+
+Substituting the drag expression gives
+\begin{equation}
+a = g - \frac{C_d \rho A}{2m} v^2.
+\end{equation}
+
+This nonlinear differential equation governs motion under quadratic air resistance.
+
+\section{Additional Aerodynamic Forces}
+Beyond drag, objects moving through air may also experience lift. Lift forces are especially relevant for missiles and projectiles with an angle of attack. Lift arises due to pressure differences created by asymmetric airflow around the body or wings.
+
+The lift force depends on parameters such as the square of the velocity, air density, angle of attack, and a lift coefficient $C_L$, which can often be approximated as $C_L = k\alpha$ for small angles $\alpha$. The lift force is expressed as
+\begin{equation}
+F_L = \frac{1}{2} C_L  \rho v^2  A.
+\end{equation}
+
+If the center of pressure does not coincide with the center of mass, the lift force can also generate a torque, affecting the rotational stability of the object.
+
+\subsection{Practical Implications}
+Air resistance plays a crucial role in many aspects of daily life and engineering. In transportation, vehicles are designed with aerodynamic shapes to reduce drag and minimize fuel consumption. In sports, air resistance influences the motion of balls, bicycles, and athletes themselves.
+
+In ballistic and aerospace applications, accurate modeling of drag and lift is essential for predicting trajectories and ensuring that projectiles or missiles reach their intended targets. Meteorology and atmospheric science also rely heavily on understanding air resistance to model falling particles and precipitation.
+
+\section{Conclusion}
+Air resistance is a fundamental factor in real-world motion. It is proportional to the square of an object’s velocity and to its effective surface area, making its effects especially pronounced at high speeds. Both theoretical physics and engineering disciplines must account for air resistance to accurately describe and predict motion in natural environments. Therefore, incorporating non-ideal forces such as drag is essential for bridging the gap between classroom physics and real-world applications.
+
+\newpage
+
+
+
+\section{References}
+
+\href{https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/falling-object-with-air-resistance/}
+{NASA Glenn Research Center – Falling Object with Air Resistance}
+
+\href{https://www.roketsan.com.tr/uploads/docs/1628594512_20.03.2020model-roketcilik-master-dokumanv04.pdf}
+{Roketsan A.\c{S}. – Model Roket\c{c}ilik E\u{g}itim Dok\"uman\i\ (2020) pp 29-42 }
+
+
+\end{document}
