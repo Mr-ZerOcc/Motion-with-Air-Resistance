@@ -39,7 +39,7 @@ The report is written in **LaTeX** and follows a standard undergraduate physics 
 ## 🎓 Author
 
 **Mustafa Karakuş**  
-Physics Undergraduate Student  
+Physics Student at Marmara University 
 December 2025
 
 ---
